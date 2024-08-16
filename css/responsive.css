@@ -1,0 +1,420 @@
+@media only screen and (min-width: 1024px)
+{
+  /* font family */
+
+/* shared styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 3rem;
+  color: white;
+  margin: 10px 0;
+  text-align: center;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+header {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.logo {
+  font-size: 45px;
+  font-weight: 700;
+  color: #E6533C;
+  font-style: italic;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 1.8rem;
+}
+
+.nav-item a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item.active a {
+  background-color: #E6533C;
+  border-radius: 30px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+/* Banner Section */
+.banner-title {
+  font-size: 5rem;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.banner-content p {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.span {
+  font-style: italic;
+}
+
+.btn-primary, .btn-secondary {
+  border-radius: 40px;
+  padding: 1rem 4rem;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #E6533C;
+  border: none;
+  color: white;
+}
+
+.btn-secondary {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+/* Habits Section */
+.container-habits {
+  display: block;
+  margin-top: 80px;
+  text-align: center;
+  gap: 20px;
+}
+
+.habits-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.habits-item {
+  padding: 20px;
+  flex: 1 1 150px;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.habits-item img {
+  border: 4px solid grey;
+  border-radius: 150px;
+  width: 100%;
+  height: auto;
+}
+
+.habits-item h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.habits-item p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+}
+
+/* Run Mile Section */
+.container-run {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(34, 34, 34);
+  border: 1px solid;
+  margin: 2rem 1rem;
+  padding: 3rem;
+  border-radius: 30px;
+}
+
+.container-run img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.run-content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.run-content p {
+  text-align: left;
+}
+
+/* Trainings and Exercises */
+.trainning {
+  position: relative;
+}
+
+.exercise-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.trainning-content {
+  margin: 20px 0;
+}
+
+.trainning img {
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.row-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  border: 3px solid;
+}
+
+/* BMI Calculator */
+.BMI-container {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.bmi-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+.bmi-calculator {
+  margin-left: 0;
+  text-align: center;
+}
+
+.bmi-title {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 120%;
+  text-align: center;
+}
+
+table {
+  color: WHITE;
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: left;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+input, select {
+  height: 52px;
+  padding: 0 0.5rem;
+  margin: 0.4rem 0;
+  border: none;
+  border-radius: 8px;
+  background: rgb(77, 75, 75);
+  color: white;
+  font-size: 16px;
+  width: 100%;
+}
+
+::placeholder {
+  color: white;
+}
+
+/* Our Team */
+.our-team {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.team-card-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.team-card {
+  background-color: rgb(53, 52, 52);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.team-card img {
+  width: 100%;
+  height: auto;
+  filter: brightness(70%);
+}
+
+.team-card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.team-card-content h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.team-card-content p {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-column {
+  margin: 10px 0;
+}
+
+.footer-column h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  max-width: 300px;
+  text-align: center;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media only screen and (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+  }
+  .ham-burger{
+    color: white;
+    font-size: 1.3rem;
+    display: block;
+  }
+  .banner-content {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .habits-items {
+    flex-wrap: nowrap;
+  }
+
+  .container-run {
+    flex-direction: row;
+  }
+
+  .trainning-content {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .bmi-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .team-card-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+}
+
